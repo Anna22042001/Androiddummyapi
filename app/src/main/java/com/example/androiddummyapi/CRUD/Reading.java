@@ -33,8 +33,8 @@ public class Reading extends AppCompatActivity {
                     return;
                 }else{
                     List<Employee> list = response.body();
+                    String profile="";
                     for(Employee employee:list){
-                        String profile="";
                         profile+= "id: " + employee.getId() + "\n";
                         profile+= "Name: " + employee.getEmployee_name() + "\n";
                         profile+= "Salary: " + employee.getEmployee_salary() + "\n";
